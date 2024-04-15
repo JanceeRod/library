@@ -37,6 +37,10 @@ body {
     height: 40px;
 }
 
+.button-container button:hover {
+    background-color: rgb(182, 182, 182);
+}
+
 .books-grid {
     /* border: solid red; */
     width: clamp(280px, 70%, 100vw);
@@ -107,3 +111,70 @@ body {
 .read-status .remove-book:hover {
     background-color: rgb(182, 182, 182);
 }
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    width: 300px;
+}
+
+.modal h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal label {
+    margin-bottom: 5px;
+}
+
+.modal input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal .read-check {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 8px;
+    gap: 10px;
+}
+
+.modal button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.modal button:hover {
+    background-color: #0056b3;
+}
+
+.modal input[type="checkbox"] {
+    width: 15px; 
+    height: 15px; 
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
