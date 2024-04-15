@@ -61,3 +61,16 @@ body {
     overflow: hidden; 
     transition: box-shadow 0.1s, transform 0.1s;
 }
+
+.detail .book-title {
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.detail .author {
+    font-weight: 500;
+}
+
+.detail .pages {
+    font-weight: 300;
+}
