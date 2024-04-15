@@ -3,6 +3,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: "Poppins", sans-serif;
 }
 
 .header {
@@ -10,7 +11,6 @@
     display: flex;
     align-items: center;
     padding: 30px clamp(10px, 100px, 100px);
-    font-family: "Poppins", sans-serif;
     font-size: larger;
 }
 
@@ -29,7 +29,6 @@ body {
 }
 
 .button-container button {
-    font-family: "Poppins", sans-serif;
     font-size: medium;
     background-color: rgb(207, 207, 207);
     border: none;
@@ -54,12 +53,13 @@ body {
     border-radius: 10px;
     height: auto;
     padding: 30px;
-
-    font-family: "Poppins", sans-serif;
-    display: flex;
-    flex-wrap: wrap;
     overflow: hidden; 
     transition: box-shadow 0.1s, transform 0.1s;
+}
+
+.book-card:hover {
+    box-shadow: 6px 6px 8px rgba(194, 194, 194, 0.575);
+    transform: translateY(-5px);
 }
 
 .detail .book-title {
@@ -73,4 +73,37 @@ body {
 
 .detail .pages {
     font-weight: 300;
+}
+
+.read-status {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.read-status button {
+    border: 0;
+    border-radius: 8px;
+    flex-grow: 1;
+    height: 40px;
+    font-weight: 500;
+    font-size: medium;
+}
+
+.read-status .read {
+    background-color: rgb(198, 255, 175);
+}
+
+.read-status .read:hover {
+    background-color: rgb(184, 236, 163);
+}
+
+.read-status .remove-book {
+    background-color: rgb(207, 207, 207);
+}
+
+.read-status .remove-book:hover {
+    background-color: rgb(182, 182, 182);
 }
