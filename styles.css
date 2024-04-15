@@ -57,7 +57,10 @@ body {
     border-radius: 10px;
     height: auto;
     padding: 30px;
-    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
     transition: box-shadow 0.1s, transform 0.1s;
 }
 
@@ -77,14 +80,20 @@ body {
 
 .detail .pages {
     font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.read-container {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .read-status {
-    margin-top: 15px;
     display: flex;
     align-items: center;
     gap: 20px;
-    flex: 1;
 }
 
 .read-status button {
