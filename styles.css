@@ -39,6 +39,30 @@ body {
     height: 40px;
 }
 
+.grid-container {
+    border: solid palegreen;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
 .books-grid {
     border: solid red;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 30px;
+}
+
+.book-card {
+    border: solid 1px#dfe6dd;
+    background-color: #fff9ef;
+    box-shadow: 4px 4px 4px 2px rgba(219, 219, 219, 0.473);
+    border-radius: 10px;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap */
+    overflow: hidden; /* Clip overflowing content */
+    transition: box-shadow 0.1s, transform 0.1s; /* Added transition for transform */
 }
