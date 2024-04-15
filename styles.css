@@ -54,6 +54,8 @@ body {
     border-radius: 10px;
     height: auto;
     padding: 30px;
+
+    font-family: "Poppins", sans-serif;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden; 
