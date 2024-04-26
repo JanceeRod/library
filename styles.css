@@ -113,12 +113,36 @@ body {
     background-color: rgb(184, 236, 163);
 }
 
+.read-status .read:active {
+    background-color: rgb(165, 209, 147);
+}
+
+/*  */
+
+.read-status .read-clicked {
+    background-color: rgb(255, 175, 175);
+}
+
+.read-status .read-clicked:hover {
+    background-color: rgb(236, 163, 163);
+}
+
+.read-status .read-clicked:active {
+    background-color: rgb(209, 147, 147);
+}
+
+/*  */
+
 .read-status .remove-book {
     background-color: rgb(207, 207, 207);
 }
 
 .read-status .remove-book:hover {
     background-color: rgb(182, 182, 182);
+}
+
+.read-status .remove-book:active {
+    background-color: rgb(156, 156, 156);
 }
 
 .modal {
