@@ -1,7 +1,8 @@
 const popupModal = document.querySelector('.modal')
 const addBookButton = document.querySelector('.add-book-button')
-
 const readButtons =  document.querySelectorAll('.read')
+const removeButtons = document.querySelectorAll('.remove-book')
+
 
 addBookButton.addEventListener('click', () => {
     popupModal.showModal()
@@ -22,3 +23,10 @@ readButtons.forEach(button => {
         }
     });
 });
+
+removeButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const bookCard = button.closest('.book-card');
+        bookCard.remove();
+    })
+})
