@@ -26,5 +26,10 @@ class Library {
                 this.toggleReadStatus(event.target)
             }
         });
+
+        this.modalForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            this.addBook();
+        });
     }
 }
